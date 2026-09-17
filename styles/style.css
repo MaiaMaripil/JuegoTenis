@@ -1,3 +1,32 @@
-#boton{
-    
+#titulo_principal{
+    text-align: center;
+}
+/* Estilo para mostrar la foto de perfil en el link al perfil */
+.perfil{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    object-fit: scale-down;
+    border-radius: 50%;
+}
+
+/* Estilo para las listas de botones */
+.boton{
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    background-color: #252525;
+    color: #fff;
+    /* Texto */
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+}
+.boton:hover{
+
 }
