@@ -30,3 +30,66 @@
 .boton:hover{
 
 }
+
+/*Estilo para boton de inicio*/
+.home{
+     display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+   /* object-fit: scale-down;
+    border-radius: 50%;*/
+}
+
+/*Estilo de la tabla de partidas*/
+.tabla-partidas {
+  background: #ffffff;
+  border: 1px solid #abababd7;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.partidasList {
+    border-top:1px solid #abababd7;
+  list-style: none;
+  max-height: 330px;
+  overflow-y: auto; /*Scroll*/
+}
+
+.partida-item {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.partida-info{
+    display: flex;
+  flex-direction: column; 
+  gap: 5px;
+}
+
+.nueva-partida-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  gap:10px
+}
+
+/*Estilo del boton de nueva partida*/
+.boton-nueva-partida{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color:#252525;
+  color: #f7f6f6f2;
+  text-decoration: none;
+  font-weight: 400;
+  
+}
