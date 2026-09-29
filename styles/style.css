@@ -14,6 +14,7 @@
 #titulo_principal{
   text-align: center;
   font-size: 70px;
+  font-family: "UnifrakturMaguntia", cursive;
 }
 
 /* Estilo para mostrar la foto de perfil en el link al perfil */
