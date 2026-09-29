@@ -28,20 +28,20 @@
 
 /* Estilo para las listas de botones */
 .boton{
-    display: block;
-    margin-bottom: 5px;
-    padding: 10px 10px;
-    background-color: #252525;
-    color: #fff;
-    /* Texto */
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    font-family: sans-serif;
-    font-weight: bold;
-
-    transition: background-color 0.3s ease;
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  background-color: #252525;
+  color: #fff;
+  /* Texto */
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Cinzel", serif;;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
+
 .boton:hover{
  /* TODO: completar*/
 }
