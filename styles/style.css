@@ -1,6 +1,16 @@
 #titulo_principal{
-    text-align: center;
+  text-align: center;
+  font-size: 70px;
 }
+
+/* Clase para aplicar la tipografia */
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* Estilo para mostrar la foto de perfil en el link al perfil */
 .perfil{
     display: block;
@@ -28,7 +38,7 @@
     transition: background-color 0.3s ease;
 }
 .boton:hover{
-
+ /* TODO: completar*/
 }
 
 /*Estilo para boton de inicio*/
