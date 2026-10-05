@@ -4,15 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Crear nueva partida</title>
 </head>
 
 <body>
     <a href="partidas.html">
-        Volver
+       <h2>Volver</h2> 
     </a>
 
+    <section class="tabla-partidas">
+        <h3>Crear partida</h3>
 
+        <!--Formulario para crear nueva partida-->
+        <form class="form-partida">
+            <label for="titulo">Nombre de la partida</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Nombre">
+
+            <label>Dificultad</label>
+            <div class="dificultad">
+                <button type="button" class="boton-dif">Baja</button>
+                <button type="button" class="boton-dif">Intermedia</button>
+                <button type="button" class="boton-dif">Alta</button>
+            </div>
+            
+            <button type="submit" class="boton">Guardar</button>
+        </form>
+
+    </section>
 
 </body>
 
