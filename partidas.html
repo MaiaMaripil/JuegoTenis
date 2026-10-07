@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="paginas">
    <header>
         <a class="home-link" href="index.html">
             <img src="styles\assets\Navigation_Button.svg" alt="Ir al inicio">
         </a>
     </header>
 
+    <!--Seccion que contiene todas las partidas jugadas-->
     <section class="tabla-partidas">
         <h2>Mis partidas</h2>
 
-        <!--Se colocan las partidas dinamicamente, puse algunos ejemplos para visualizar mejor-->
+        <!--Ejemplos de partidas-->
         <ul class="partidasList">
 
             <li class="partida-item">
                 <div class="partida-info">
-                    <span id="subtitulo"> ☆ Partida 1</span>
+                    <strong> ☆ Partida 1</strong>
                     <span id="texto">Ganada!</span>
                     <span id="texto">3-1</span>
                     <span id="texto"> 4/10/2026</span>
@@ -33,7 +34,7 @@
 
             <li class="partida-item">
                 <div class="partida-info">
-                    <span id="subtitulo"> ☆ Partida 2</span>
+                    <strong> ☆ Partida 2</strong>
                     <span id="texto">Ganada!</span>
                     <span id="texto">2-1</span>
                     <span id="texto"> 02/10/2026</span>
@@ -43,7 +44,7 @@
 
             <li class="partida-item">
                 <div class="partida-info">
-                    <span id="subtitulo">☆ Partida 3</span>
+                    <strong>☆ Partida 3</strong>
                     <span id="texto">Perdida</span>
                     <span id="texto">2-3</span>
                     <span id="texto"> 24/9/2026</span>
@@ -54,7 +55,7 @@
 
             <li class="partida-item">
                 <div class="partida-info">
-                    <span id="subtitulo">☆ Partida 4</span>
+                    <strong >☆ Partida 4</strong>
                     <span id="texto">Empate</span>
                     <span id="texto">2-2</span>
                     <span id="texto"> 28/9/2026</span>
@@ -64,7 +65,7 @@
 
             <li class="partida-item">
                 <div class="partida-info">
-                    <span id="subtitulo">☆ Partida 5</span>
+                    <strong>☆ Partida 5</strong>
                     <span id="texto">Empate</span>
                     <span id="texto">2-2</span>
                     <span id="texto"> 27/9/2026</span>
@@ -75,8 +76,9 @@
         </ul>
     </section>
 
+    <!--Link y texto para crear una nueva partida-->
     <section class="nueva-partida-container">
-        <span id="subtitulo">Nueva Partida</span>
+        <h2 >Nueva Partida</h2>
         <a href="seleccionPartida.html" class="boton-nueva-partida">+</a>
     </section>
 
