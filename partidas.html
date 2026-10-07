@@ -9,39 +9,75 @@
 </head>
 
 <body>
-    <a class="home-link" href="index.html">
-        <img src="styles\assets\Navigation_Button.svg" alt="Ir al inicio">
-    </a>
-
+   <header>
+        <a class="home-link" href="index.html">
+            <img src="styles\assets\Navigation_Button.svg" alt="Ir al inicio">
+        </a>
+    </header>
 
     <section class="tabla-partidas">
-        <h3 >Mis partidas</h3>
+        <h2>Mis partidas</h2>
 
         <!--Se colocan las partidas dinamicamente, puse algunos ejemplos para visualizar mejor-->
         <ul class="partidasList">
+
             <li class="partida-item">
                 <div class="partida-info">
-                    <span>☆ Label</span>
-                    <span>Descripcion</span>
+                    <span id="subtitulo"> ☆ Partida 1</span>
+                    <span id="texto">Ganada!</span>
+                    <span id="texto">3-1</span>
+                    <span id="texto"> 4/10/2026</span>
                 </div>
+                <a href="detallePartida.html" class="ver-detalle">Ver detalle</a>
             </li>
 
-            <!-- Fila 2 -->
             <li class="partida-item">
                 <div class="partida-info">
-                    <span> ☆ Label</span>
-                    <span>Descripcion</span>
+                    <span id="subtitulo"> ☆ Partida 2</span>
+                    <span id="texto">Ganada!</span>
+                    <span id="texto">2-1</span>
+                    <span id="texto"> 02/10/2026</span>
                 </div>
+                <a href="detallePartida.html" class="ver-detalle">Ver detalle</a>
             </li>
+
+            <li class="partida-item">
+                <div class="partida-info">
+                    <span id="subtitulo">☆ Partida 3</span>
+                    <span id="texto">Perdida</span>
+                    <span id="texto">2-3</span>
+                    <span id="texto"> 24/9/2026</span>
+                </div>
+                <a href="detallePartida.html" class="ver-detalle">Ver detalle</a>
+            </li>
+
+
+            <li class="partida-item">
+                <div class="partida-info">
+                    <span id="subtitulo">☆ Partida 4</span>
+                    <span id="texto">Empate</span>
+                    <span id="texto">2-2</span>
+                    <span id="texto"> 28/9/2026</span>
+                </div>
+                <a href="detallePartida.html" class="ver-detalle">Ver detalle</a>
+            </li>
+
+            <li class="partida-item">
+                <div class="partida-info">
+                    <span id="subtitulo">☆ Partida 5</span>
+                    <span id="texto">Empate</span>
+                    <span id="texto">2-2</span>
+                    <span id="texto"> 27/9/2026</span>
+                </div>
+                <a href="detallePartida.html" class="ver-detalle">Ver detalle</a>
+            </li>
+
         </ul>
-
     </section>
 
     <section class="nueva-partida-container">
-        <span>Nueva Partida</span>
+        <span id="subtitulo">Nueva Partida</span>
         <a href="seleccionPartida.html" class="boton-nueva-partida">+</a>
     </section>
-
-</body>
 
 </html>

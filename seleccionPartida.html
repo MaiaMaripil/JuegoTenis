@@ -9,15 +9,17 @@
 </head>
 
 <body>
-    <a href="partidas.html">
-       <h2>Volver</h2> 
-    </a>
+    <header>
+        <a href="partidas.html" class="link-volver">← Volver</a>
+    </header>
+
 
     <section class="tabla-partidas">
         <h3>Crear partida</h3>
 
         <!--Formulario para crear nueva partida-->
         <form class="form-partida">
+
             <label for="titulo">Nombre de la partida</label>
             <input type="text" id="titulo" name="titulo" placeholder="Nombre">
 
@@ -27,8 +29,8 @@
                 <button type="button" class="boton-dif">Intermedia</button>
                 <button type="button" class="boton-dif">Alta</button>
             </div>
-            
-            <button type="submit" class="boton">Guardar</button>
+
+            <button type="submit" class="boton-guardar">GUARDAR</button>
         </form>
 
     </section>

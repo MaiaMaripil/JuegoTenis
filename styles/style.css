@@ -21,12 +21,12 @@
   font-family: "UnifrakturMaguntia", cursive;
 }
 
-html,
-body {
+html,body {
   min-width: 100%;
   min-height: 100%;
   margin: 0;
 }
+
 /* Estilo para el fondo */
 .inicio {
   position: relative;
@@ -83,17 +83,18 @@ ul {
   cursor: pointer;
 }
 
-.boton:hover {
-   background-color: #4a4a4a;
+.boton:hover, .ver-detalle:hover, .link-volver:hover, .boton-guardar:hover{
+  background-color: #4a4a4a;
 }
 
-.columnas{
+.columnas {
   display: flex;
   gap: 20px;
 }
 
-.tarjeta{
-  background-color: #f2e9e430; /* los ultimos dos digitos en hex son el porcentaje de transparencia*/
+.tarjeta {
+  background-color: #f2e9e430;
+  /* los ultimos dos digitos en hex son el porcentaje de transparencia*/
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -105,33 +106,28 @@ ul {
 /*Estilo para boton de inicio*/
 .home-link {
   display: block;
+ 
+  padding: 8px 16px;
   width: fit-content;
   margin: 20px auto;
 }
 
-.home{
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: 0;
-   /* object-fit: scale-down;
-    border-radius: 50%;*/
-}
-
 /*Estilo de la tabla de partidas*/
 .tabla-partidas {
-  background: #ffffff;
+  background-color: #f2e9e430;
+  ;
   border: 1px solid #abababd7;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 30px;
+  font-family: "Cinzel", serif;
 }
 
 .partidasList {
-  border-top: 1px solid #abababd7;
+  border-top: 1px solid #929292d7;
   list-style: none;
-  max-height: 330px;
+  max-height: 350px;
   padding: 0;
   overflow-y: auto;
   /*Scroll*/
@@ -142,6 +138,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  border-bottom: 1px solid #dbdbdbd7;
 }
 
 .partida-info {
@@ -163,23 +160,28 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #252525;
   color: #f7f6f6f2;
   text-decoration: none;
-  font-weight: 400;
+  font-size: 20px;    
+  font-weight: 600;
 
+}
+
+.boton-nueva-partida:hover {
+  transform: scale(1.30);
+   color: #fffdfd;
 }
 
 /*Estilo para crear nueva partida*/
 .form-partida {
- 
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 15px;
+  margin: 15px;
 }
 
 .dificultad {
@@ -189,20 +191,122 @@ ul {
 
 .boton-dif {
   flex: 1;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #abababd7;
   background-color: #ffffff;
   border-radius: 5px;
-  cursor: pointer;
-   margin-bottom: 5px;
+ 
+  margin-bottom: 20px;
   font-family: "Cinzel", serif;
-  ;
+  transition: background-color 0.3s ease;
+
 }
 
-input[type="text"] {
+.boton-dif:hover {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+input {
+  margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
-font-family: "Cinzel", serif;
-  ;
+  font-family: "Cinzel", serif;
+}
+
+.boton-guardar{
+ color: #eeeeee;
+  padding: 15px;
+  border: 1px solid #abababd7;
+  background-color: #000000;
+  border-radius: 5px;
+  font-size: 18px;    
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Cinzel", serif;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.boton-guardar:hover, .ver-detalle:hover{
+  transform: translateY(-2px);
+}
+
+#subtitulo {
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+}
+
+#texto {
+  margin-left: 30px;
+}
+
+/*Boton para ver detalle de partidas*/
+.ver-detalle {
+  text-decoration: none;
+  background-color: #252525;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #252525;
+  transition: background-color 0.3s ease;
+}
+
+.link-volver {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 30px; 
+  padding: 8px 16px;
+
+  background-color: #252525;
+  color: #fff;
+  /* Texto */
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Cinzel", serif;
+
+  transition: background-color 0.3s ease;
+
+}
+
+/*Resultado de la partida*/
+.resultado-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dadada72;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.resultado-box p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Estilo para la ficha de datos*/
+.ficha-datos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ficha-datos li {
+  display: flex;
+  /* Flexbox por cada fila */
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.etiqueta {
+  color: #373737;
+  font-size: 15px;
 }
