@@ -6,7 +6,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 .cinzel {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
@@ -14,17 +13,37 @@
   font-style: normal;
 }
 
-#titulo_principal {
-  text-align: center;
-  margin: clamp(18px, 4vh, 42px) 0 clamp(28px, 6vh, 62px);
-  font-size: clamp(42px, 7vw, 70px);
-  font-family: "UnifrakturMaguntia", cursive;
+/* Propiedades personalizadas (variables) */
+:root{
+  --font-family-titulos:"UnifrakturMaguntia", cursive;
+  --font-family-texto: "Cinzel", serif;
+  --color-fondo: #999999;
 }
 
+/* Elementos HTML */
 html,body {
   min-width: 100%;
   min-height: 100%;
   margin: 0;
+}
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de Titulos y subtitulos */
+.titulo_centrado {
+  text-align: center;
+  margin: clamp(48px, 4vh, 42px) 0 clamp(18px, 4vh, 42px);
+  font-size: clamp(42px, 7vw, 70px);
+  font-family: var(--font-family-titulos);
+}
+.subtitulo_centrado{
+  text-align: center;
+  margin: clamp(5px, 1vh, 5px) 0 clamp(28px, 6vh, 62px);
+  font-size: clamp(32px, 6vw, 60px);
+  font-family: var(--font-family-titulos);
 }
 
 /* Estilo para el fondo */
@@ -32,12 +51,12 @@ html,body {
   position: relative;
   min-height: 100dvh;
   margin: 0;
+  background-color: var(--color-fondo);
   background-image: url("assets/marco.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 .inicio main {
   width: 100%;
   padding-top: clamp(8px, 2vh, 20px);
@@ -45,24 +64,21 @@ html,body {
   z-index: 1;
 }
 
+.pagina_usuario{
+  background-color: var(--color-fondo);
+}
 
 /* Estilo para mostrar la foto de perfil en el link al perfil */
-.perfil {
+.foto_perfil {
   display: block;
-  width: clamp(36px, 5vw, 50px);
-  height: clamp(36px, 5vw, 50px);
+  width: clamp(36px, 7vw, 70px);
+  height: clamp(36px, 7vw, 70px);
   margin: 0 auto;
   object-fit: scale-down;
   border-radius: 50%;
 }
 
 /* Estilo para las listas de botones */
-ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .boton {
   display: block;
   width: min(76%, 728px);
@@ -76,7 +92,7 @@ ul {
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
-  font-family: "Cinzel", serif;
+  font-family: var(--font-family-texto);
   font-size: clamp(13px, 1.8vw, 18px);
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -98,11 +114,18 @@ ul {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 300px;
+  width: clamp(300px, 97vw, 1200px);
+  margin: 0 auto 5px;
 
-  font-family: "Cinzel", serif;
+  font-family: var(--font-family-texto);
+}
+.tarjeta_usuario{
+  text-align: center;
 }
 
+.inventario{
+  text-align: center;
+}
 /*Estilo para boton de inicio*/
 .home-link {
   display: block;
