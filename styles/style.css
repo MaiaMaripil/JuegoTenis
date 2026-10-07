@@ -24,8 +24,11 @@
 html,body {
   min-width: 100%;
   min-height: 100%;
-  margin: 0;
+  margin: 0;          
+  scrollbar-color: #252525 #f2e9e430;
 }
+
+
 ul {
   width: 100%;
   margin: 0;
@@ -64,7 +67,7 @@ ul {
   z-index: 1;
 }
 
-.pagina_usuario{
+.paginas{
   background-color: var(--color-fondo);
 }
 
@@ -138,17 +141,16 @@ ul {
 /*Estilo de la tabla de partidas*/
 .tabla-partidas {
   background-color: #f2e9e430;
-  ;
-  border: 1px solid #abababd7;
+   border: 1px solid #ccc;
   border-radius: 12px;
-  max-width: 700px;
+  max-width: 60%;
   margin: 0 auto;
   padding: 30px;
-  font-family: "Cinzel", serif;
+  font-family:  var(--font-family-texto);
 }
 
 .partidasList {
-  border-top: 1px solid #929292d7;
+  border-top: 1px solid #ccc;
   list-style: none;
   max-height: 350px;
   padding: 0;
@@ -161,7 +163,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  border-bottom: 1px solid #dbdbdbd7;
+  border-bottom: 1px solid #c2c1c1d7;
 }
 
 .partida-info {
@@ -175,7 +177,8 @@ ul {
   align-items: center;
   justify-content: center;
   margin-top: 25px;
-  gap: 10px
+  gap: 10px;
+  font-family: var(--font-family-texto);
 }
 
 /*Estilo del boton de nueva partida*/
@@ -186,8 +189,9 @@ ul {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  border: 1px solid #ccc;
   background-color: #252525;
-  color: #f7f6f6f2;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;    
   font-weight: 600;
@@ -215,13 +219,14 @@ ul {
 .boton-dif {
   flex: 1;
   padding: 15px;
-  border: 1px solid #abababd7;
-  background-color: #ffffff;
+  border: 2px solid #ccc;
+  background-color: #e1e1e1;
   border-radius: 5px;
  
   margin-bottom: 20px;
   font-family: "Cinzel", serif;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 
 }
 
@@ -233,16 +238,16 @@ ul {
 input {
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-family: "Cinzel", serif;
+  background-color: #e1e1e1;
 }
 
 .boton-guardar{
- color: #eeeeee;
+ color: #fff;
   padding: 15px;
-  border: 1px solid #abababd7;
-  background-color: #000000;
+  background-color: #252525;
   border-radius: 5px;
   font-size: 18px;    
   font-weight: 600;
@@ -257,11 +262,6 @@ input {
   transform: translateY(-2px);
 }
 
-#subtitulo {
-  font-size: 20px;
-  font-family: "Cinzel", serif;
-}
-
 #texto {
   margin-left: 30px;
 }
@@ -274,14 +274,13 @@ input {
   font-size: 13px;
   padding: 6px 12px;
   border-radius: 5px;
-  border: 1px solid #252525;
   transition: background-color 0.3s ease;
 }
 
 .link-volver {
   display: block;
   width: fit-content;
-  margin: 30px auto 30px; 
+  margin: 35px auto 35px; 
   padding: 8px 16px;
 
   background-color: #252525;
@@ -290,7 +289,7 @@ input {
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
-  font-family: "Cinzel", serif;
+  font-family: var(--font-family-texto);
 
   transition: background-color 0.3s ease;
 
@@ -301,7 +300,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #dadada72;
+  background-color: #dadada74;
   padding: 15px;
   border-radius: 8px;
   margin: 20px 0;
@@ -326,10 +325,7 @@ input {
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #cccccc9e;
 }
 
-.etiqueta {
-  color: #373737;
-  font-size: 15px;
-}
+
