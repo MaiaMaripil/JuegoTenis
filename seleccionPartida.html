@@ -8,21 +8,23 @@
     <title>Crear nueva partida</title>
 </head>
 
-<body>
+<body class="paginas">
     <header>
         <a href="partidas.html" class="link-volver">← Volver</a>
     </header>
 
-
+    <!--Seccion contenedora del formulario para crear una nueva partida-->
     <section class="tabla-partidas">
-        <h3>Crear partida</h3>
+        <h2>Crear partida</h2>
 
-        <!--Formulario para crear nueva partida-->
+        <!--Formulario-->
         <form class="form-partida">
 
+            <!--Ingresar nombre de la partida-->
             <label for="titulo">Nombre de la partida</label>
             <input type="text" id="titulo" name="titulo" placeholder="Nombre">
 
+            <!--Seleccionar dificultad-->
             <label>Dificultad</label>
             <div class="dificultad">
                 <button type="button" class="boton-dif">Baja</button>
@@ -30,6 +32,7 @@
                 <button type="button" class="boton-dif">Alta</button>
             </div>
 
+            <!--Boton para guardar la nueva partida-->
             <button type="submit" class="boton-guardar">GUARDAR</button>
         </form>
 
