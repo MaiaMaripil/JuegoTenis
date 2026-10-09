@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=UnifrakturMaguntia&display=swap");
 
+/* TODO: Ordenar las clases en diferentes archivos para ordenarlos */
+
 /* Clase para aplicar la tipografia */
 .unifrakturmaguntia-regular {
   font-family: "UnifrakturMaguntia", cursive;
