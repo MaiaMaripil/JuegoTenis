@@ -1,0 +1,36 @@
+/*Resultado de la partida*/
+.resultado-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dadada74;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.resultado-box p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Estilo para la ficha de datos*/
+.ficha-datos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ficha-datos li {
+  display: flex;
+  /* Flexbox por cada fila */
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #cccccc9e;
+}
+
+#texto {
+  margin-left: 30px;
+}
