@@ -1,0 +1,50 @@
+/*Estilo para crear nueva partida*/
+.form-partida {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 15px;
+}
+
+.dificultad {
+  display: flex;
+  gap: 8px;
+}
+
+.boton-dif {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #ccc;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+ 
+  margin-bottom: 20px;
+  font-family: "Cinzel", serif;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.boton-dif:hover {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.boton-guardar{
+ color: #fff;
+  padding: 15px;
+  background-color: #252525;
+  border-radius: 5px;
+  font-size: 18px;    
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Cinzel", serif;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.boton-guardar:hover, .ver-detalle:hover{
+  transform: translateY(-2px);
+}
+
+

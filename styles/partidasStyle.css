@@ -1,0 +1,65 @@
+/*Partidas*/
+.partidasList {
+  border-top: 1px solid #ccc;
+  list-style: none;
+  max-height: 350px;
+  padding: 0;
+  overflow-y: auto;
+  /*Scroll*/
+}
+
+.partida-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #c2c1c1d7;
+}
+
+.partida-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nueva-partida-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 10px;
+  font-family: var(--font-family-texto);
+}
+
+/*Estilo del boton de nueva partida*/
+.boton-nueva-partida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #252525;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;    
+  font-weight: 600;
+
+}
+
+.boton-nueva-partida:hover {
+  transform: scale(1.30);
+   color: #fffdfd;
+}
+
+/*Boton para ver detalle de partidas*/
+.ver-detalle {
+  text-decoration: none;
+  background-color: #252525;
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
