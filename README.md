@@ -8,6 +8,8 @@ Este proyecto universitario propone una experiencia inmersiva combinando histori
 
 A medida que el jugador avanza, puede mejorar sus capacidades obteniendo equipamiento histórico para convertirse en el mejor jugador del monasterio.
 
+> Para conocer más detalles del desarrollo y proceso de diseño del proyecto vea la wiki de este repositorio.
+
 ## Características Principales
 
 * **Sistema de Mejoras:** Obtención y mejora de equipamiento (guantes, protecciones) que incrementan las habilidades y estadísticas del personaje.
