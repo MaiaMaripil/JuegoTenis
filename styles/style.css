@@ -40,17 +40,12 @@ html,body {
 }
 
 /*Global*/
-/*Se usa en varias paginas*/
 .boton:hover, .ver-detalle:hover, .link-volver:hover, .boton-guardar:hover{
   background-color:var(--color-tarjeta);
 }
 
-
-/*Global*/
-/*Se usa en todas las paginas*/
 .tarjeta {
   background-color: #f2e9e430;
-  /* los ultimos dos digitos en hex son el porcentaje de transparencia*/
   padding: 20px;
   border: 1px solid var(--color-borde);
   border-radius: 8px;
@@ -64,7 +59,6 @@ html,body {
   background-color: var(--color-fondo);
 }
 
-/*Se va a usar en varias paginas*/
 input {
   margin-bottom: 15px;
   padding: 10px;
@@ -74,7 +68,6 @@ input {
   background-color: #e1e1e1;
 }
 
-/*Se va a usar en varias paginas*/
 .link-volver {
   display: block;
   width: fit-content;
@@ -89,7 +82,6 @@ input {
   border-radius: 5px;
   font-family: var(--font-family-texto);
   transition: background-color 0.3s ease;
-
 }
 
 /*------------------------------------------------------------------*/
