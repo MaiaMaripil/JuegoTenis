@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=UnifrakturMaguntia&display=swap");
 
-/* TODO: Ordenar las clases en diferentes archivos para ordenarlos */
-
 /* Clase para aplicar la tipografia */
 .unifrakturmaguntia-regular {
   font-family: "UnifrakturMaguntia", cursive;
@@ -19,7 +17,10 @@
 :root{
   --font-family-titulos:"UnifrakturMaguntia", cursive;
   --font-family-texto: "Cinzel", serif;
-  --color-fondo: #999999;
+  --color-base-primario: #0C0C02;
+  --color-base-secundario: #E2E6E7;
+  --color-secundario: #8A90C4;
+  --color-acento: #E7EB3F;
 }
 
 /* Elementos HTML */
@@ -27,11 +28,10 @@ html,body {
   min-width: 100%;
   min-height: 100%;
   margin: 0;          
-  scrollbar-color: #252525 #f2e9e430;
+  scrollbar-color: var(--color-base-secundario) #232306;
 }
 
 /*Estilo para boton de inicio*/
-/*Se usa en partidas.html, y perfilUsuario.html*/
 .home-link {
   display: block;
   padding: 8px 16px;
