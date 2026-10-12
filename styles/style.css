@@ -17,6 +17,7 @@
 :root{
   --font-family-titulos:"UnifrakturMaguntia", cursive;
   --font-family-texto: "Cinzel", serif;
+  
   --color-base-primario: #0C0C02;
   --color-base-secundario: #E2E6E7;
   --color-secundario: #8A90C4;
@@ -29,6 +30,10 @@ html,body {
   min-height: 100%;
   margin: 0;          
   scrollbar-color: var(--color-base-secundario) #232306;
+}
+
+.paginas{
+  background-color: var(--color-base-primario);
 }
 
 /*Estilo para boton de inicio*/
@@ -53,10 +58,6 @@ html,body {
   margin: 0 auto 5px;
 
   font-family: var(--font-family-texto);
-}
-
-.paginas{
-  background-color: var(--color-fondo);
 }
 
 input {
