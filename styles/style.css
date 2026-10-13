@@ -29,7 +29,7 @@ html,body {
   min-width: 100%;
   min-height: 100%;
   margin: 0;          
-  scrollbar-color: var(--color-base-secundario) #232306;
+  scrollbar-color: var(--color-base-secundario) var(--color-base-primario);
 }
 
 .paginas{
@@ -63,6 +63,7 @@ html,body {
 
 }
 .tarjeta-borde-deco{
+  padding: 0.2%;
   color: var(--color-base-secundario);
 }
 
@@ -86,7 +87,7 @@ input {
   border: 1px solid var(--color-borde);
   border-radius: 5px;
   font-family: "Cinzel", serif;
-  background-color: #e1e1e1;
+  background-color: var(--color-base-secundario);
 }
 
 .link-volver {
@@ -95,8 +96,8 @@ input {
   margin: 35px auto 35px; 
   padding: 8px 16px;
 
-  background-color: #252525;
-  color: #fff;
+  background-color: var(--color-base-primario);
+  color: var(--color-base-secundario);
   /* Texto */
   text-decoration: none;
   text-align: center;
