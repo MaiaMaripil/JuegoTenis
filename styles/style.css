@@ -50,14 +50,34 @@ html,body {
 }
 
 .tarjeta {
-  background-color: #f2e9e430;
   padding: 20px;
-  border: 1px solid var(--color-borde);
   border-radius: 8px;
   width: clamp(300px, 97vw, 1200px);
-  margin: 0 auto 5px;
+  margin: 0 auto;
+
+  background-color: var(--color-secundario);
 
   font-family: var(--font-family-texto);
+  color: var(--color-base-primario);
+  text-align: center;
+
+}
+.tarjeta-borde-deco{
+  color: var(--color-base-secundario);
+}
+
+.borde-deco{ /* clase para establecer un borde decorativo*/
+  box-sizing: border-box;
+
+  background-color: var(--color-base-primario);
+  background-clip: padding-box;
+
+  border: clamp(28px, 9vw, 90px) solid transparent;
+  border-image-source: url("../img/marco_ver2.svg");
+  border-image-slice: 48;
+  border-image-repeat: round;
+  
+  isolation: isolate;
 }
 
 input {
@@ -108,10 +128,6 @@ ul {
 .columnas {
   display: flex;
   gap: 20px;
-}
-
-.tarjeta_usuario{
-  text-align: center;
 }
 
 .inventario{
