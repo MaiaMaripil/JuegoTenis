@@ -49,6 +49,15 @@ html,body {
   height: 56px;
 }
 
+.home-link-angel{
+  padding: 8px 16px;
+}
+
+.home-link-angel img {
+  width: clamp(160px, 35vw, 280px);
+  height: auto;
+}
+
 /*Global*/
 .boton:hover, .ver-detalle:hover, .link-volver:hover, .boton-guardar:hover{
   background-color:var(--color-tarjeta);
