@@ -43,6 +43,11 @@ html,body {
   width: fit-content;
   margin: 20px auto;
 }
+.home-link img {
+  display: block;
+  width: 55px;
+  height: 56px;
+}
 
 /*Global*/
 .boton:hover, .ver-detalle:hover, .link-volver:hover, .boton-guardar:hover{
