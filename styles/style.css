@@ -43,6 +43,20 @@ html,body {
   width: fit-content;
   margin: 20px auto;
 }
+.home-link img {
+  display: block;
+  width: 55px;
+  height: 56px;
+}
+
+.home-link-angel{
+  padding: 8px 16px;
+}
+
+.home-link-angel img {
+  width: clamp(160px, 35vw, 280px);
+  height: auto;
+}
 
 /*Global*/
 .boton:hover, .ver-detalle:hover, .link-volver:hover, .boton-guardar:hover{
