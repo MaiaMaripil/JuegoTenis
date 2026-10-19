@@ -34,18 +34,17 @@ if (formLogin) {
     formLogin.addEventListener('submit', (e) => {
         e.preventDefault(); // Evita que la página se recargue
 
-        // Leemos el texto ingresado
+
         const emailIngresado = inputEmail.value.trim();
         const passwordIngresado = inputPassword.value;
 
-        // 4. Validamos contra las credenciales ficticias
         if (emailIngresado === USUARIO_FICTICIO.email && passwordIngresado === USUARIO_FICTICIO.password) {
 
-            // Guardamos en la memoria del navegador que el usuario inició sesión
+            //se guarda en la memoria del navegador que el usuario inició sesión
             localStorage.setItem('sesionActiva', 'true');
             localStorage.setItem('usuarioActual', JSON.stringify(USUARIO_FICTICIO));
 
-            // Redirigimos directamente a la pantalla de Perfil
+            // se redirige a la pantalla de Perfil
             window.location.href = 'perfilUsuario.html';
 
 
@@ -63,7 +62,7 @@ if (formLogin) {
 
 const cerrarSesion = document.getElementById('cerrar-sesion');
 
-if (cerrarSesion) { 
+if (cerrarSesion) {
     cerrarSesion.addEventListener('click', (e) => {
 
         e.preventDefault();
