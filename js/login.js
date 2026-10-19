@@ -19,7 +19,7 @@ if (linkPerfil) { // Buens práctica: verificar que el elemento exista en la pá
         /*Si no esta logueado va al login */
         if (!estaLogueado) {
             e.preventDefault();
-            window.location.href = '/pages/user/login.html';
+            window.location.href = 'pages/user/login.html';
         }
     });
 }
