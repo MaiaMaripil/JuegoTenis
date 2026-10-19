@@ -9,12 +9,12 @@ const USUARIO_FICTICIO = {
 }
 
 /*Comportamiento para ir al perfil de usuario */
-const estaLogueado = localStorage.getItem('sesionActiva') === 'true';
 
 const linkPerfil = document.getElementById('link-perfil');
 
 if (linkPerfil) { // Buens práctica: verificar que el elemento exista en la página
     linkPerfil.addEventListener('click', (e) => {
+        const estaLogueado = localStorage.getItem('sesionActiva') === 'true';
 
         /*Si no esta logueado va al login */
         if (!estaLogueado) {
