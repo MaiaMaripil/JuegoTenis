@@ -60,7 +60,8 @@ html,body {
 
 /*Global*/
 .boton:hover, .ver-detalle:hover, .link-volver:hover, .boton-guardar:hover{
-  background-color:var(--color-tarjeta);
+  background-color:var(--color-acento);
+  color: var(--color-base-primario);
 }
 
 .tarjeta {
