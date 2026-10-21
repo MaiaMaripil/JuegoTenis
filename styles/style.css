@@ -66,7 +66,7 @@ html,body {
 .tarjeta {
   padding: 20px;
   border-radius: 8px;
-  width: clamp(300px, 97vw, 1200px);
+  width: clamp(300px, 90vw, 1200px);
   margin: 0 auto;
 
   background-color: var(--color-secundario);
@@ -74,7 +74,6 @@ html,body {
   font-family: var(--font-family-texto);
   color: var(--color-base-primario);
   text-align: center;
-
 }
 .tarjeta-borde-deco{
   padding: 0.2%;
@@ -90,6 +89,16 @@ html,body {
   border: clamp(28px, 9vw, 90px) solid transparent;
   border-image-source: url("../img/marco_ver2.svg");
   border-image-slice: 48;
+  border-image-repeat: round;
+  
+  isolation: isolate;
+}
+.borde-deco-simple{
+  box-sizing: border-box;
+
+  border: clamp(28px, 50vw, 100px) solid transparent;
+  border-image-source: url("../img/bordes.svg");
+  border-image-slice: 60;
   border-image-repeat: round;
   
   isolation: isolate;
@@ -131,11 +140,16 @@ ul {
 
 /* Estilo para mostrar la foto de perfil en el link al perfil */
 .foto_perfil {
-  display: block;
+  display: flex;
   width: clamp(36px, 7vw, 70px);
   height: clamp(36px, 7vw, 70px);
   margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+  
   object-fit: scale-down;
+ 
   border-radius: 50%;
 }
 

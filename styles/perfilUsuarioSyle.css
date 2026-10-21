@@ -1,0 +1,25 @@
+.foto-perfil-marco {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(120px, 18vw, 220px);
+    height: clamp(120px, 18vw, 220px);
+
+    background-color: transparent;
+    background-image: url("../img/marco_jugador.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.foto_perfil_retrato {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+}
+
+.tarjeta-perfil{
+    align-items: center;
+    justify-content: center;
+}
