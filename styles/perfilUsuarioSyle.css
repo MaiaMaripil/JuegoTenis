@@ -31,6 +31,14 @@
     margin-top: 48px;
 }
 
+
+.titulo-inventario{
+    margin: 0 0 clamp(18px, 4vh, 48px);
+    font-size: clamp(22px, 5vw, 50px);
+}
+.tarjeta-inventario {
+  background-color: transparent;
+}
 /* CAROUSEL del inventario*/
 #inventario {
     position: relative;
@@ -71,6 +79,7 @@
     top:50%;
     transform:translateY(-50%);
 
+    color: var(--color-acento);
     font-weight:700;
     font-size:clamp(18px,3vw,30px);
     letter-spacing:.02em;

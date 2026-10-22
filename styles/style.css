@@ -36,6 +36,12 @@ html,body {
   background-color: var(--color-base-primario);
 }
 
+.titulo{
+  text-align: center;
+  color: var(--color-acento);
+  font-family: var(--font-family-titulos);
+}
+
 /*Estilo para boton de inicio*/
 .home-link {
   display: block;
@@ -52,16 +58,13 @@ html,body {
 .home-link-angel{
   padding: 8px 16px;
 }
-
 .home-link-angel img {
   width: clamp(160px, 35vw, 280px);
   height: auto;
 }
 
-/*Global*/
 .boton:hover, .ver-detalle:hover, .link-volver:hover, .boton-guardar:hover{
-  background-color:var(--color-acento);
-  color: var(--color-base-primario);
+  color: var(--color-acento);
 }
 
 .tarjeta {

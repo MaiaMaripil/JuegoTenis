@@ -1,9 +1,4 @@
 /* Estilos de Titulos y subtitulos */
-.titulo{
-  text-align: center;
-  color: var(--color-acento);
-  font-family: var(--font-family-titulos);
-}
 
 .titulo-principal {
   margin: clamp(18px, 4vh, 48px) 0 clamp(0.5px, 2vh, 8px);
