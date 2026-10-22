@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: clamp(120px, 18vw, 220px);
-    height: clamp(120px, 18vw, 220px);
+    width: clamp(100px, 14vw, 170px);
+    height: clamp(100px, 14vw, 170px);
 
     background-color: transparent;
     background-image: url("../img/marco_jugador.svg");
@@ -20,6 +20,67 @@
 }
 
 .tarjeta-perfil{
+    width: clamp(280px, 70vw, 850px);
+    padding: 16px;
+
     align-items: center;
     justify-content: center;
 }
+
+.tarjeta-perfil + .tarjeta{
+    margin-top: 48px;
+}
+
+/* CAROUSEL del inventario*/
+#inventario {
+    position: relative;
+    width: 100%;
+    height: clamp(320px, 55vw, 520px);
+    min-height: 320px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.rueda{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+
+.inventario-item{
+    position:absolute;
+    border:0;
+    padding:0;
+    cursor:pointer;
+    background-color:var(--color-base-primario);
+    transform-origin:center;
+    transition:opacity .03s;
+}
+.inventario-item img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:3px
+}
+
+.etiqueta{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+
+    font-weight:700;
+    font-size:clamp(18px,3vw,30px);
+    letter-spacing:.02em;
+}
+#etiqueta-der{
+    right: 16px;
+}
+#etiqueta-izq{
+    left: 16px;
+}
+
+
+/* https://pin.it/5MVxNqyiS */

@@ -5,6 +5,7 @@
     <title>Mi perfil</title>
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/perfilUsuarioSyle.css">
+    <script src="../../js/carousel.js"></script>
 </head>
 
 <body class="paginas">
@@ -29,24 +30,11 @@
 
         <section class = "tarjeta ">
             <h2>Inventario</h2>
-            <div class="columnas inventario">
-                <div>
-                    <h3>Guantes</h3>
-                    <article>
-                        <h4>Guantes de control</h4>
-                        <p>Golpe +8</p>
-                        <h4>Guantes de cuero</h4>
-                        <p>Golpe +4</p>
-                    </article>
-                </div>
-                
-                <div>
-                    <h3>Zapatos</h3>
-                    <article>
-                        <h4>Zapatillas de pista</h4>
-                        <p>Agilidad +6</p>
-                    </article>
-                </div>
+            <div id="inventario">
+                <div class="etiqueta" id="etiqueta-der">GUANTES</div>
+                <div class="etiqueta" id="etiqueta-izq">ZAPATOS</div>
+                <div class="rueda" id="rueda-der"></div>
+                <div class="rueda" id="rueda-izq"></div>
             </div>
         </section>
     </main>
