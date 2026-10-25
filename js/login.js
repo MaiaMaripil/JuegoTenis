@@ -9,7 +9,6 @@ const USUARIO_FICTICIO = {
 }
 
 /*Comportamiento para ir al perfil de usuario */
-
 const linkPerfil = document.getElementById('link-perfil');
 
 if (linkPerfil) { // Buens práctica: verificar que el elemento exista en la página
@@ -27,16 +26,12 @@ if (linkPerfil) { // Buens práctica: verificar que el elemento exista en la pá
 
 /*Comportamiento para iniciar sesion */
 const formLogin = document.getElementById('form-login');
-const inputEmail = document.getElementById('login-email');
-const inputPassword = document.getElementById('login-password');
-
 if (formLogin) {
     formLogin.addEventListener('submit', (e) => {
         e.preventDefault(); // Evita que la página se recargue
 
-
-        const emailIngresado = inputEmail.value.trim();
-        const passwordIngresado = inputPassword.value;
+        const emailIngresado = document.getElementById('login-email').value.trim();
+        const passwordIngresado = document.getElementById('login-password').value;
 
         if (emailIngresado === USUARIO_FICTICIO.email && passwordIngresado === USUARIO_FICTICIO.password) {
 
@@ -46,8 +41,6 @@ if (formLogin) {
 
             // se redirige a la pantalla de Perfil
             window.location.href = 'perfilUsuario.html';
-
-
 
         } else {
 
@@ -60,15 +53,10 @@ if (formLogin) {
 
 /*Comportamiento para cerrar sesion */
 
-const cerrarSesion = document.getElementById('cerrar-sesion');
-
-if (cerrarSesion) {
-    cerrarSesion.addEventListener('click', (e) => {
-
-        e.preventDefault();
-        localStorage.removeItem('sesionActiva');
-        localStorage.removeItem('usuarioActual');
-        window.location.href = '../../index.html';
-
-    });
+function cerrarSesion() {
+  localStorage.removeItem('sesionActiva');
+  localStorage.removeItem('usuarioActual');
+  
+  //Se redirige al inicio
+  window.location.href = '../../index.html';
 }
