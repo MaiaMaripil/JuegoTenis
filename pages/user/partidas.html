@@ -10,15 +10,14 @@
 </head>
 
 <body class="paginas">
-   <header>
-        <a class="home-link" href="../../index.html">
-            <img src="../../img/Navigation_Button.svg" alt="Ir al inicio">
-        </a>
-    </header>
+    <div data-header="home"></div>
 
     <!--Seccion que contiene todas las partidas jugadas-->
-    <section class="tarjeta">
-        <h2>Mis partidas</h2>
+    <section class="tarjeta tarjeta-borde-deco borde-deco">
+        <div class="nueva-partida-container">
+            <h2>Mis partidas</h2>
+            <a href="../user/seleccionPartida.html" class="boton-nueva-partida">+</a>
+        </div>
 
         <!--Ejemplos de partidas-->
         <ul class="partidasList">
@@ -77,10 +76,8 @@
         </ul>
     </section>
 
-    <!--Link y texto para crear una nueva partida-->
-    <section class="nueva-partida-container">
-        <h2 >Nueva Partida</h2>
-        <a href="../user/seleccionPartida.html" class="boton-nueva-partida">+</a>
-    </section>
-
+    <div class="delimitador_deco"></div>
+    
+    <script src="../../js/header.js"></script>
+</body>
 </html>

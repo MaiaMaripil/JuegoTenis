@@ -162,3 +162,12 @@ ul {
   display: flex;
   gap: 20px;
 }
+
+/* es para la decoraciones de headers y footers */
+.delimitador_deco{
+  min-height: 80px;
+  background-image: url(../img/top_bottom_deco.svg);
+  background-size: 10%;
+  background-repeat: repeat-x;
+  background-position: top;
+}
