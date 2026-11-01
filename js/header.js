@@ -1,9 +1,11 @@
 const headers = {
     home: `
-        <header>
-            <a class="home-link home-link-angel" href="../../index.html">
-                <img src="../../img/nav_angel_icon.svg" alt="Ir al inicio">
-            </a>
+        <header class="delimitador_deco">
+            <div>
+                <a class="home-link home-link-angel" href="../../index.html">
+                    <img src="../../img/nav_angel_icon.svg" alt="Ir al inicio">
+                </a>
+            </div>
         </header>
     `,
     volver: `
