@@ -1,0 +1,22 @@
+{
+    "usuarios": [
+        {
+            "id": "u1",
+            "nombre": "Juana",
+            "apellido": "Rivera",
+            "email": "juana@gmail.com",
+            "password": "123",
+            "avatar": "../img/User_icon.svg",
+            "fechaRegistro": "12/12/23"
+        },
+        {
+            "id": "u2",
+            "nombre": "Lucia",
+            "apellido": "Ramirez",
+            "email": "luciar@gmail.com",
+            "password": "123",
+            "avatar": "../img/User_icon.svg",
+            "fechaRegistro": "12/12/23"
+        }
+    ]
+}
